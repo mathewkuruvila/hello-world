@@ -1,1 +1,1 @@
-This is a help document
+This is a help document with some changes
