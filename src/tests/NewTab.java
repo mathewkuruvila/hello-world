@@ -37,5 +37,37 @@ public class NewTab
 		driver.manage().window().maximize();
 	}
 	
+	public static void main(String str[])
+	{
+		double d1 =   0.23;
+		double d2 =  0.23;
+		if(d1 == d2)
+		{
+			System.out.println("Success");
+		}
+		else
+			System.out.println("Failed");
+		
+		Double dd1 = new Double( 0.23);
+		Double dd2 = new Double( 0.23);
+		
+		if(dd1 == dd2)
+		{
+			System.out.println("Success");
+		}
+		else
+			System.out.println("Failed");
+		
+		
+		double ddd1 = dd1;
+		double ddd2 = dd2;
+		
+		if(ddd1 == ddd2)
+		{
+			System.out.println("Success");
+		}
+		else
+			System.out.println("Failed");
+	}
 }
 

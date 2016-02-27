@@ -1,9 +1,13 @@
 package utils;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.Reporter;
 
 public class Utils {
 	
@@ -82,6 +86,42 @@ public class Utils {
 		waitForElement(driver, locator, 10);
 		int no_Of_Rows = driver.findElements(By.xpath(locator)).size();
 		return no_Of_Rows;
+	}
+	
+	public static void logDetails(String s)
+	{
+		Reporter.log(s);
+		System.out.println(s);
+	}
+	
+	public static void logErrorDetails(String s, boolean status)
+	{
+		System.out.println(s);
+		if(status)
+		{
+			s = "<FONT COLOR=\"GREEN\">" + s + "</FONT>";
+		}
+		else
+		{
+			s = "<FONT COLOR=\"RED\">" + s + "</FONT>";
+		}
+		
+		Reporter.log(s);
+		
+	}
+	
+	public static String patternMatcher(String input, String regex)
+	{
+		String str = "";
+		Pattern p = Pattern.compile(regex);
+		Matcher m = p.matcher(input);
+		
+		if(m.find())
+		{
+			str = m.group();
+		}
+		
+		return str;
 	}
 
 }
