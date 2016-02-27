@@ -16,7 +16,7 @@ public class NewTab
 	
 	public WebDriver driver;
 	
-	@Test  
+//	@Test  
 	public void Newtab() throws Exception 
 	{
 		driver.get("http://www.seleniumlearn.com"); 

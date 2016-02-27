@@ -1,0 +1,12 @@
+<suite name="Default suite"  thread-count="1">
+	<test name="Test1">
+		<groups>
+			<run>
+				<include name="nseTest" />
+			</run>
+		</groups>
+		<classes>
+			<class name="tests.NSETestCases" />
+		</classes>
+	</test>
+</suite> 
