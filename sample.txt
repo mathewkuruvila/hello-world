@@ -1,2 +1,2 @@
-This is a sample from branch1 from local
+This is a sample from branch1 from local and remote
 
