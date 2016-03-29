@@ -1,2 +1,2 @@
-This is a sample from branch1
+This is a sample from branch1 master
 
